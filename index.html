@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-img {
+            
+            background-attachment: fixed;
+            background-position:center;
+            background-size: cover;
+        }
+
+        #first-slide {
+            background-image: url("/Background-Attachment/pexels-pixabay-158385.jpg");
+            height: 100vh;
+        }
+
+        #second-slide {
+            background-image: url("/Background-Attachment/pexels-pixabay-206359.jpg");
+            height: 50vh;
+        }
+
+        .article {
+            padding: 2rem;
+            margin: 2rem;
+            text-align: center;
+        }
+
+        .inside {
+            color: greenyellow ;
+            font-size: 3rem;
+            top: 50%;
+            left: 0;
+            position: absolute;
+            left:2%;
+            
+            text-align: center;
+            text-shadow: 2px -2px 6px green;
+        }
+
+     
+
+        .inside:hover {
+            border: 2px solid salmon;
+            background-color: transparent;
+            color: azure;
+            box-shadow: 4px -4px 12px black;
+            text-shadow: 4px -4px 12px black;
+            animation: slowdown;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-direction: normal;
+        }
+
+        @keyframes slowdown {
+            25% {
+                opacity: 1;
+                transform: translateY(2rem);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translateY(4rem);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(6rem);
+            }
+            
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="first-slide" class="bg-img">
+        
+        <div  class="inside">
+            <h1>WELCOME TO PARADISE ON EARTH :)</h1>
+        </div>
+
+
+    </div>
+    
+    <div class="article">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo magnam blanditiis beatae aut sapiente ipsum eaque libero, quaerat unde exercitationem odio veniam excepturi cumque similique impedit architecto quia labore minima quis facere! Similique cum repellat numquam beatae recusandae cumque debitis, nobis sequi repellendus quisquam perferendis at magni nulla laboriosam est quam quo neque ducimus dolore fugit nisi asperiores tenetur mollitia? Quisquam deserunt eius esse praesentium vero accusamus facere laudantium vitae ipsa harum. Sed, eius.</p>
+    </div>
+    <div id="second-slide" class="bg-img">
+        
+   
+    </div>
+    <div class="article">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque exercitationem, beatae magni cupiditate blanditiis aspernatur non et, cumque tempore, nemo corrupti perspiciatis! Vero debitis alias ducimus dolorem sapiente ut nobis, in cupiditate sit excepturi quia magni obcaecati pariatur voluptate officia. Obcaecati, hic? Perspiciatis ipsum natus impedit enim nesciunt est, distinctio rem aliquid laborum quos dolores rerum, ipsam nihil sed ex itaque. Impedit odio eligendi illo id sapiente quos, alias ipsum minus? Unde, est doloremque!</p>
+    </div>
+    
+</body>
+</html>
